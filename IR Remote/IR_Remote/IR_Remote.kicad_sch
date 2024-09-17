@@ -1,0 +1,93 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "07d62ec6-6e59-42d0-a028-2e4cdf5deb8a")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 53.34 71.12)
+		(size 59.69 30.48)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 255 255 255 1.0000)
+		)
+		(uuid "a4503051-c576-4a05-ab54-d863fe682058")
+		(property "Sheetname" "TRANSMITTER"
+			(at 60.96 88.9 0)
+			(effects
+				(font
+					(face "Bahnschrift")
+					(size 5 5)
+					(color 0 0 0 1)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "TRANSMITTER.kicad_sch"
+			(at 53.34 102.1846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "IR_Remote"
+				(path "/07d62ec6-6e59-42d0-a028-2e4cdf5deb8a"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 134.62 77.47)
+		(size 59.69 30.48)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 255 255 255 1.0000)
+		)
+		(uuid "d1cc275a-6460-44ec-b00d-61a9beba8f33")
+		(property "Sheetname" "RECEIVER"
+			(at 142.24 95.25 0)
+			(effects
+				(font
+					(face "Bahnschrift")
+					(size 5 5)
+					(color 0 0 0 1)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "TRANSMITTER.kicad_sch"
+			(at 134.62 108.5346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "IR_Remote"
+				(path "/07d62ec6-6e59-42d0-a028-2e4cdf5deb8a"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
