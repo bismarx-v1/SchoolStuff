@@ -1,0 +1,100 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "07d62ec6-6e59-42d0-a028-2e4cdf5deb8a")
+	(paper "A4")
+	(title_block
+		(title "IR Remote")
+		(date "2024-09-17")
+		(rev "v.1.0.0")
+		(company "X")
+		(comment 1 "X")
+		(comment 2 "X")
+		(comment 3 "IR Remote, School Project ")
+	)
+	(lib_symbols)
+	(sheet
+		(at 85.09 78.74)
+		(size 59.69 30.48)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 255 255 255 1.0000)
+		)
+		(uuid "a4503051-c576-4a05-ab54-d863fe682058")
+		(property "Sheetname" "TRANSMITTER"
+			(at 114.935 93.98 0)
+			(effects
+				(font
+					(face "Bahnschrift")
+					(size 5 5)
+					(color 0 0 0 1)
+				)
+			)
+		)
+		(property "Sheetfile" "TRANSMITTER.kicad_sch"
+			(at 85.09 109.8046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "IR_Remote"
+				(path "/07d62ec6-6e59-42d0-a028-2e4cdf5deb8a"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 156.21 78.74)
+		(size 59.69 30.48)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 255 255 255 1.0000)
+		)
+		(uuid "bd9a698e-3647-431f-874d-96d20217cc21")
+		(property "Sheetname" "RECEIVER"
+			(at 186.055 93.345 0)
+			(effects
+				(font
+					(face "Bahnschrift")
+					(size 5 5)
+					(color 0 0 0 1)
+				)
+			)
+		)
+		(property "Sheetfile" "RECEIVER.kicad_sch"
+			(at 156.21 109.8046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "IR_Remote"
+				(path "/07d62ec6-6e59-42d0-a028-2e4cdf5deb8a"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
