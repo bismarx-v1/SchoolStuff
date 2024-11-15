@@ -34,7 +34,7 @@ void loop() {
 
 
 void setup(){
-  pinMode(LED, OUTPUT);
+  pinMode(LED, OUTPUT);x
   //Serial.begin(9600);
 }
 

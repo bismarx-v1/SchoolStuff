@@ -8,6 +8,7 @@
 		(title "TASK_01")
 		(date "2024-09-17")
 		(rev "v1.0.0")
+		(company "SPS na Proseku")
 		(comment 3 "Task 01, Uloha 01")
 	)
 	(lib_symbols

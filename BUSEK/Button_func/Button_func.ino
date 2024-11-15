@@ -1,57 +1,36 @@
-#define PIN_BTN 2
+// Example Arduino program for reading the Pololu Distance Sensor with Pulse Width Output, 50cm Max
 
-void setup() 
+
+const uint8_t sensorPin = 5;
+ 
+void setup()
 {
-  pinMode(PIN_BTN, INPUT);
-  pinMode(LED_BUILTIN, OUTPUT);
+  Serial.begin(115200);
 }
-
-
-void loop() 
+ 
+void loop()
 {
-  unsigned long cas_ted = millis();
-  static unsigned long cas_predtim = cas_ted;
-  static int stav_led = LOW;
-  static int rezim = 0;
-
-  if (tlacitkoStisknuto()) 
+  int16_t t = pulseIn(sensorPin, HIGH);
+ 
+  if (t == 0)
   {
-    ++rezim;
-    if (rezim > 2) rezim = 0;
+    // pulseIn() did not detect the start of a pulse within 1 second.
+    Serial.println("timeout");
   }
-  switch (rezim)
+  else if (t > 1850)
   {
-  case 0:
-    if(cas_ted >= cas_predtim + 1000) 
-    {
-      stav_led = !stav_led;
-      cas_predtim = cas_ted;
-    }
-    digitalWrite(13, stav_led);
+    // No detection.
+    Serial.println(-1);
+  }
+  else
+  {
+    // Valid pulse width reading. Convert pulse width in microseconds to distance in millimeters.
+    int16_t d = (t - 1000) * 3 / 4;
+ 
+    // Limit minimum distance to 0.
+    if (d < 0) { d = 0; } 
   
-  case 1:
-    digitalWrite(LED_BUILTIN, HIGH);
-  break;
-
-  case 2:
-  break;
+    Serial.print(d);
+    Serial.println(" mm");
   }
-}
-
-
-
-
-
-//FUNKCE
-int tlacitkoStisknuto() 
-{
-  static int stav_tlacitka_predchozi;
-  int stav_tlacitka = digitalRead(PIN_BTN);
-  int _stisknuto = 0;
-
-  if (stav_tlacitka_predchozi == 0 && stav_tlacitka == 1) {
-    _stisknuto = 1;
-  }
-  stav_tlacitka_predchozi = stav_tlacitka;
-  return _stisknuto;
 }
