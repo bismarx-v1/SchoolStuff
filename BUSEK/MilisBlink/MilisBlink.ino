@@ -10,7 +10,7 @@
   https://www.arduino.cc/en/Tutorial/BuiltInExamples/ReadAnalogVoltage
 */
 // the setup routine runs once when you press reset:
-/*
+
 #define POT 7
 #include <Arduino.h>
 void setup() {
@@ -27,7 +27,7 @@ void loop() {
   // print out the value you read:
   Serial.println(voltage);
 }
-*/
+
 
 #define POT 7
 #define LED 13
