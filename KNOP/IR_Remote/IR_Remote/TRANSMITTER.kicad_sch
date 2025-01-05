@@ -2317,7 +2317,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H5mm"
 			(at 59.69 85.09 0)
 			(effects
 				(font
@@ -2351,7 +2351,7 @@
 			(uuid "c967bb19-1241-4c78-9537-d1bc1da44378")
 		)
 		(instances
-			(project ""
+			(project "IR_Remote"
 				(path "/07d62ec6-6e59-42d0-a028-2e4cdf5deb8a/a4503051-c576-4a05-ab54-d863fe682058"
 					(reference "SW1")
 					(unit 1)
@@ -2482,7 +2482,7 @@
 			(uuid "7a2faf79-d775-40af-ad28-dcc71a50b1d7")
 		)
 		(instances
-			(project ""
+			(project "IR_Remote"
 				(path "/07d62ec6-6e59-42d0-a028-2e4cdf5deb8a/a4503051-c576-4a05-ab54-d863fe682058"
 					(reference "#PWR012")
 					(unit 1)
@@ -3009,7 +3009,7 @@
 			(uuid "df34f412-d0d4-4e37-aecb-e34dcb42a9da")
 		)
 		(instances
-			(project ""
+			(project "IR_Remote"
 				(path "/07d62ec6-6e59-42d0-a028-2e4cdf5deb8a/a4503051-c576-4a05-ab54-d863fe682058"
 					(reference "J1")
 					(unit 1)
@@ -3097,7 +3097,7 @@
 			(uuid "db2887a7-5db0-4e10-a050-415679ee602c")
 		)
 		(instances
-			(project ""
+			(project "IR_Remote"
 				(path "/07d62ec6-6e59-42d0-a028-2e4cdf5deb8a/a4503051-c576-4a05-ab54-d863fe682058"
 					(reference "IO1")
 					(unit 1)
@@ -3173,7 +3173,7 @@
 			(uuid "1c5303f6-5740-4034-a329-6b631bf96d9d")
 		)
 		(instances
-			(project ""
+			(project "IR_Remote"
 				(path "/07d62ec6-6e59-42d0-a028-2e4cdf5deb8a/a4503051-c576-4a05-ab54-d863fe682058"
 					(reference "T1")
 					(unit 1)
@@ -3209,7 +3209,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A_Pad1.58x1.35mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
 			(at 52.3748 100.33 0)
 			(effects
 				(font
@@ -3319,7 +3319,7 @@
 			(uuid "755a7e3e-c010-4556-bcd7-c20a5797daa2")
 		)
 		(instances
-			(project ""
+			(project "IR_Remote"
 				(path "/07d62ec6-6e59-42d0-a028-2e4cdf5deb8a/a4503051-c576-4a05-ab54-d863fe682058"
 					(reference "Q1")
 					(unit 1)
@@ -3454,7 +3454,7 @@
 			(uuid "89f73017-7a95-4bf8-a734-75d8aed9597f")
 		)
 		(instances
-			(project ""
+			(project "IR_Remote"
 				(path "/07d62ec6-6e59-42d0-a028-2e4cdf5deb8a/a4503051-c576-4a05-ab54-d863fe682058"
 					(reference "D2")
 					(unit 1)
