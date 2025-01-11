@@ -1024,6 +1024,542 @@
 				)
 			)
 		)
+		(symbol "Isolator:VO2630"
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -4.064 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "VO2630"
+				(at 7.62 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+				(at 2.54 -18.288 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/doc?84732"
+				(at -10.16 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Dual High Speed CMOS Compatible Optocoupler, dV/dt 1000/us, VCM 10, max 7V VCC, DIP-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "High speed optically coupled gates"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "DIP*W7.62mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VO2630_1_1"
+				(rectangle
+					(start -5.08 10.16)
+					(end 5.08 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 -4.445) (xy -1.778 -4.445)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 4.445) (xy -1.778 4.445)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.381 -7.366) (xy -0.381 -8.636)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.381 -5.08) (xy -0.381 -6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.381 -2.794) (xy -0.381 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.381 -0.508) (xy -0.381 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.381 1.778) (xy -0.381 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.381 4.064) (xy -0.381 2.794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.381 6.35) (xy -0.381 5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.381 8.636) (xy -0.381 7.366)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -5.08) (xy 5.207 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 5.08) (xy 5.08 5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.953 -7.62) (xy -2.413 -7.62) (xy -2.413 -5.715)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.953 7.62) (xy -2.413 7.62) (xy -2.413 4.318)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.413 -5.842) (xy -2.413 -2.54) (xy -4.953 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.413 4.445) (xy -2.413 2.54) (xy -4.953 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.413 -4.445) (xy -3.048 -5.715) (xy -1.778 -5.715) (xy -2.413 -4.445)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.413 4.445) (xy -3.048 5.715) (xy -1.778 5.715) (xy -2.413 4.445)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.937 -5.08) (xy 1.397 -3.81) (xy 1.397 -6.35) (xy 3.937 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.937 5.08) (xy 1.397 6.35) (xy 1.397 3.81) (xy 3.937 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.397 -5.588) (xy -0.635 -5.588) (xy -1.016 -5.715) (xy -1.016 -5.461) (xy -0.635 -5.588)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.397 -4.572) (xy -0.635 -4.572) (xy -1.016 -4.699) (xy -1.016 -4.445) (xy -0.635 -4.572)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.397 4.572) (xy -0.635 4.572) (xy -1.016 4.445) (xy -1.016 4.699) (xy -0.635 4.572)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.397 5.588) (xy -0.635 5.588) (xy -1.016 5.461) (xy -1.016 5.715) (xy -0.635 5.588)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 4.318 -5.08)
+					(radius 0.3556)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 4.318 5.08)
+					(radius 0.3556)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -7.62 7.62 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "C1"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "C2"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -7.62 0)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 7.62 -5.08 180)
+					(length 2.54)
+					(name "VO2"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 7.62 5.08 180)
+					(length 2.54)
+					(name "VO1"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 12.7 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Reference_Voltage:TLE2426xD"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3213,15 +3749,35 @@
 			"wEtDkP8PaeEhdyRzjEkAAAAASUVORK5CYII="
 		)
 	)
-	(text "PS9121-F3-AX is 15Mb/S RS-485 speed is 10Mb/S"
+	(text "RS-485 max speed is 10Mb/s"
 		(exclude_from_sim no)
-		(at 144.018 77.978 0)
+		(at 168.656 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "21bfeb2d-def2-461f-9d14-299db03f4642")
+	)
+	(text "PS9121-F3-AX is 15Mb/s single ch"
+		(exclude_from_sim no)
+		(at 142.24 75.184 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "2a10b4b5-5c5d-49f5-a680-0df26952c2aa")
+	)
+	(text "TLP2270(TP4,E is 20Mb/s cost, for 10 units is 43,35CZK"
+		(exclude_from_sim no)
+		(at 143.764 86.614 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "312f88c0-849e-49b8-8465-09cfa8659d6b")
 	)
 	(text "39,85CZK for a unit if qty of units is 10 "
 		(exclude_from_sim no)
@@ -3244,6 +3800,16 @@
 		)
 		(uuid "83664252-5997-4c3d-a1c7-f37f78752993")
 	)
+	(text "VO0661T is 10Mb/s, cost for 10 units is 59,39CZK"
+		(exclude_from_sim no)
+		(at 140.97 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a6561000-7e9a-46e6-8568-1fde35a165b3")
+	)
 	(text "Vf = 1.2V\nIf = 20mA\nVcc = 3.3V (RPi)\n\nR = (Vcc - Vf) / If\nR = 105R ~ 110R\n\nIf [110R] = 19.09mA"
 		(exclude_from_sim no)
 		(at 231.14 64.77 0)
@@ -3253,6 +3819,16 @@
 			)
 		)
 		(uuid "bd370033-a79c-4e4f-b2fa-cdecc9817457")
+	)
+	(text "VO2630 is 10Mb/s, cost for 10 units is 38,34CZK"
+		(exclude_from_sim no)
+		(at 140.462 89.408 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c26f02b5-c4c7-4e41-b0cb-265a9a69eeba")
 	)
 	(text "40mA MAX - TOO LITTLE - HIGH COST"
 		(exclude_from_sim no)
@@ -4656,6 +5232,94 @@
 			(project "OptoCouplers"
 				(path "/2d1c3ebc-b5b7-4bd6-ada4-e78c3f1503ff"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Isolator:VO2630")
+		(at 85.09 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac4fe5b7-2a85-479e-b944-f1bec12b0e36")
+		(property "Reference" "U1"
+			(at 88.1065 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "VO2630"
+			(at 88.1065 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 87.63 102.108 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/doc?84732"
+			(at 74.93 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual High Speed CMOS Compatible Optocoupler, dV/dt 1000/us, VCM 10, max 7V VCC, DIP-8"
+			(at 85.09 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "7c055186-f52d-4790-b80f-c72f199ea55d")
+		)
+		(pin "4"
+			(uuid "e5c9c600-6070-4cfd-a963-6ecd53119a0a")
+		)
+		(pin "1"
+			(uuid "13a3b570-0b39-4728-9bbe-5938121c3118")
+		)
+		(pin "3"
+			(uuid "61cb2ca4-5064-466d-8fdb-496f7b1cb68e")
+		)
+		(pin "5"
+			(uuid "2206291d-e61c-4537-8f72-68bc4e98ab7b")
+		)
+		(pin "2"
+			(uuid "cbded543-c704-40a9-854d-77941d1719b9")
+		)
+		(pin "6"
+			(uuid "f21af88d-c7cc-466a-9b21-80421b42b301")
+		)
+		(pin "7"
+			(uuid "d34f66c2-8a91-40a4-ab51-2b74f1f8e9c8")
+		)
+		(instances
+			(project ""
+				(path "/2d1c3ebc-b5b7-4bd6-ada4-e78c3f1503ff"
+					(reference "U1")
 					(unit 1)
 				)
 			)
