@@ -111,7 +111,7 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
 		(layer "F.Cu")
 		(uuid "06d41aa9-3285-4f58-847b-a9ad77b48c31")
-		(at 152.5 58.25)
+		(at 140.5 60)
 		(descr "Mounting Hole 3.2mm, M3, DIN965")
 		(tags "mounting hole 3.2mm m3 din965")
 		(property "Reference" "H2"
@@ -8744,7 +8744,7 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
 		(layer "F.Cu")
 		(uuid "98d0066c-2632-4e31-953a-c467759927e1")
-		(at 205.5 83.5)
+		(at 226.25 85.25)
 		(descr "Mounting Hole 3.2mm, M3, DIN965")
 		(tags "mounting hole 3.2mm m3 din965")
 		(property "Reference" "H1"
@@ -13827,6 +13827,72 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "F.Cu")
+		(uuid "17b478a6-74ff-4a0e-9264-ac479217d812")
+		(pts
+			(xy 208.75 55.75) (xy 149.25 55.75)
+		)
+		(height 8.749999)
+		(gr_text "59.5000 mm"
+			(at 179 45.200001 0)
+			(layer "F.Cu")
+			(uuid "17b478a6-74ff-4a0e-9264-ac479217d812")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.2)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(extension_height 0.58642)
+			(extension_offset 0.5) keep_text_aligned)
+	)
+	(dimension
+		(type aligned)
+		(layer "F.Cu")
+		(uuid "7104f2e9-c2e2-46dc-815e-7e5cc3d1e906")
+		(pts
+			(xy 208 55) (xy 208 86.75)
+		)
+		(height -8.5)
+		(gr_text "31.7500 mm"
+			(at 214.7 70.875 90)
+			(layer "F.Cu")
+			(uuid "7104f2e9-c2e2-46dc-815e-7e5cc3d1e906")
+			(effects
+				(font
+					(size 1.5 1.5)
+					(thickness 0.3)
+				)
+			)
+		)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.2)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(extension_height 0.58642)
+			(extension_offset 0.5) keep_text_aligned)
 	)
 	(segment
 		(start 180.75 76.959189)
