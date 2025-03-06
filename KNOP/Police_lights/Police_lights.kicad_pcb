@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.6)
 		(legacy_teardrops no)
@@ -9,41 +9,42 @@
 	(paper "A4")
 	(layers
 		(0 "F.Cu" signal)
-		(31 "B.Cu" signal)
-		(32 "B.Adhes" user "B.Adhesive")
-		(33 "F.Adhes" user "F.Adhesive")
-		(34 "B.Paste" user)
-		(35 "F.Paste" user)
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(40 "Dwgs.User" user "User.Drawings")
-		(41 "Cmts.User" user "User.Comments")
-		(42 "Eco1.User" user "User.Eco1")
-		(43 "Eco2.User" user "User.Eco2")
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(48 "B.Fab" user)
-		(49 "F.Fab" user)
-		(50 "User.1" user)
-		(51 "User.2" user)
-		(52 "User.3" user)
-		(53 "User.4" user)
-		(54 "User.5" user)
-		(55 "User.6" user)
-		(56 "User.7" user)
-		(57 "User.8" user)
-		(58 "User.9" user)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user)
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+		(47 "User.5" user)
+		(49 "User.6" user)
+		(51 "User.7" user)
+		(53 "User.8" user)
+		(55 "User.9" user)
 	)
 	(setup
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(pcbplotparams
-			(layerselection 0x0000000_fffffffe)
-			(plot_on_all_layers_selection 0x0001000_80000000)
+			(layerselection 0x00000000_00000000_55555555_55555554)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_02000004)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
@@ -53,7 +54,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -61,18 +61,22 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
-			(psnegative yes)
+			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue yes)
-			(plotfptext yes)
+			(plot_black_and_white yes)
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab no)
+			(crossoutdnponfab no)
 			(subtractmaskfromsilk no)
-			(outputformat 4)
+			(outputformat 5)
 			(mirror no)
 			(drillshape 2)
 			(scaleselection 1)
@@ -85,38 +89,38 @@
 	(net 3 "GND")
 	(net 4 "VCC")
 	(net 5 "Net-(C4-Pad1)")
-	(net 6 "TR")
-	(net 7 "Net-(D2-A)")
-	(net 8 "Net-(D4-K)")
-	(net 9 "Net-(D6-K)")
-	(net 10 "Q_2")
-	(net 11 "Net-(D8-K)")
-	(net 12 "DIVIDER")
-	(net 13 "Net-(R3-Pad1)")
-	(net 14 "Q_1")
-	(net 15 "unconnected-(U1-DIS-Pad7)")
-	(net 16 "unconnected-(U1-CV-Pad5)")
-	(net 17 "unconnected-(U1-R-Pad4)")
-	(net 18 "unconnected-(U2-R-Pad4)")
-	(net 19 "unconnected-(U2-CV-Pad5)")
-	(net 20 "unconnected-(U2-DIS-Pad7)")
-	(net 21 "TR_1")
-	(net 22 "TR_2")
-	(net 23 "unconnected-(H1-Pad1)")
-	(net 24 "unconnected-(H1-Pad1)_1")
-	(net 25 "unconnected-(H1-Pad1)_2")
-	(net 26 "unconnected-(H2-Pad1)")
-	(net 27 "unconnected-(H2-Pad1)_1")
-	(net 28 "unconnected-(H2-Pad1)_2")
+	(net 6 "Net-(D2-A)")
+	(net 7 "Net-(D4-K)")
+	(net 8 "Net-(D6-K)")
+	(net 9 "Q_2")
+	(net 10 "Net-(D8-K)")
+	(net 11 "DIVIDER")
+	(net 12 "Net-(R3-Pad1)")
+	(net 13 "Q_1")
+	(net 14 "unconnected-(IO1-DIS-Pad7)")
+	(net 15 "TR_1")
+	(net 16 "TR_2")
+	(net 17 "unconnected-(H1-Pad1)")
+	(net 18 "unconnected-(H1-Pad1)_1")
+	(net 19 "unconnected-(H1-Pad1)_2")
+	(net 20 "unconnected-(H2-Pad1)")
+	(net 21 "unconnected-(H2-Pad1)_1")
+	(net 22 "unconnected-(H2-Pad1)_2")
+	(net 23 "unconnected-(IO1-CV-Pad5)")
+	(net 24 "unconnected-(IO1-R-Pad4)")
+	(net 25 "unconnected-(IO2-R-Pad4)")
+	(net 26 "unconnected-(IO2-CV-Pad5)")
+	(net 27 "unconnected-(IO2-DIS-Pad7)")
 	(footprint "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
 		(layer "F.Cu")
 		(uuid "06d41aa9-3285-4f58-847b-a9ad77b48c31")
-		(at 140.5 60)
+		(at 152.5 58.25)
 		(descr "Mounting Hole 3.2mm, M3, DIN965")
 		(tags "mounting hole 3.2mm m3 din965")
 		(property "Reference" "H2"
 			(at 0 -3.8 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "4b877e5d-aaa7-4b3b-a4df-31f9e84bc56e")
 			(effects
 				(font
@@ -132,19 +136,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d0dfe0dc-a7a5-4e32-8b15-de61552536e0")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -177,7 +168,7 @@
 		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/d9d1af31-bdb7-400d-bf3a-866bb0cd2dc4")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
@@ -187,7 +178,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "68411078-b33e-4cd6-8cda-41d5cdf83bdd")
 		)
@@ -198,7 +189,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "04eefb15-0880-43b3-a144-98688f6cc6fd")
 		)
@@ -219,7 +210,7 @@
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 28 "unconnected-(H2-Pad1)_2")
+			(net 22 "unconnected-(H2-Pad1)_2")
 			(pinfunction "1")
 			(pintype "input+no_connect")
 			(uuid "bad70520-0ec9-4ddb-9627-12a76713ea2a")
@@ -228,7 +219,7 @@
 			(at 0 0)
 			(size 5.6 5.6)
 			(layers "F.Cu" "F.Mask")
-			(net 27 "unconnected-(H2-Pad1)_1")
+			(net 21 "unconnected-(H2-Pad1)_1")
 			(pinfunction "1")
 			(pintype "input+no_connect")
 			(uuid "1a191f61-f11b-4598-810a-606b214ff752")
@@ -237,11 +228,12 @@
 			(at 0 0)
 			(size 5.6 5.6)
 			(layers "B.Cu" "B.Mask")
-			(net 26 "unconnected-(H2-Pad1)")
+			(net 20 "unconnected-(H2-Pad1)")
 			(pinfunction "1")
 			(pintype "input+no_connect")
 			(uuid "1a16072f-a331-4a28-bf33-6f61ce62c52e")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "LED_THT:LED_D5.0mm_Clear"
 		(layer "F.Cu")
@@ -250,7 +242,7 @@
 		(descr "LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf")
 		(tags "LED diameter 5.0mm 2 pins")
 		(property "Reference" "D9"
-			(at 1.27 -3.96 0)
+			(at 5.275 0 0)
 			(layer "F.SilkS")
 			(uuid "92e27546-6035-4f09-b65c-989baf3c3df4")
 			(effects
@@ -267,19 +259,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_THT:LED_D5.0mm_Clear"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "485dccbe-593d-40bd-8515-0104056a4318")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -312,7 +291,7 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/15b898f0-fb76-4331-bb35-870aa86fe047")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -354,7 +333,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "758ce779-4cce-43bd-80f0-cd7ae6cd9615")
 		)
@@ -426,7 +405,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "1540821c-99fe-4eb2-ad93-4e869383cb39")
 		)
@@ -447,7 +426,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 9 "Net-(D6-K)")
+			(net 8 "Net-(D6-K)")
 			(pinfunction "K")
 			(pintype "passive")
 			(uuid "a78f0de8-4af1-48bd-8338-a78d30bf523e")
@@ -458,11 +437,12 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 11 "Net-(D8-K)")
+			(net 10 "Net-(D8-K)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "98a0a6b1-b597-48ca-b68c-c54db1285b63")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm_Clear.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -481,10 +461,10 @@
 		(at 183.95 60.2)
 		(descr "8-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
-		(property "Reference" "U1"
-			(at 3.81 -2.33 0)
+		(property "Reference" "IO1"
+			(at 3.81 4.05 0)
 			(layer "F.SilkS")
-			(uuid "feec5ac7-f11a-4699-8e47-3586cd03c966")
+			(uuid "694e1c05-d618-4dbe-a2c4-650a419b0dab")
 			(effects
 				(font
 					(size 1 1)
@@ -495,23 +475,10 @@
 		(property "Value" "NE555P"
 			(at 3.81 9.95 0)
 			(layer "F.Fab")
-			(uuid "151e4150-ca36-4438-b505-7f6fdd4a05de")
+			(uuid "b53eb641-b6f8-44ee-b4d0-beb653336b9e")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "79881de0-8299-4e86-a3f5-5dbe04b931e8")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -521,7 +488,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c3f7c554-87f8-42b0-b2d3-fe456a755df4")
+			(uuid "3c695089-b008-42a2-a412-c85d62914750")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -534,7 +501,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "99721b92-ed26-4349-a7a1-e142adcad35c")
+			(uuid "ff914c50-6079-47f4-9940-f3dbb3b83595")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -544,7 +511,7 @@
 		)
 		(property ki_fp_filters "DIP*W7.62mm*")
 		(path "/cd7ad1ac-8157-4616-b17c-9c35c34848e6")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -726,7 +693,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 21 "TR_1")
+			(net 15 "TR_1")
 			(pinfunction "TR")
 			(pintype "input")
 			(uuid "02470bbd-d84d-4104-bc98-c5e5f1356b4b")
@@ -737,7 +704,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 14 "Q_1")
+			(net 13 "Q_1")
 			(pinfunction "Q")
 			(pintype "output")
 			(uuid "fd9fb14c-c436-4317-a4eb-82856ef27b5e")
@@ -748,7 +715,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 17 "unconnected-(U1-R-Pad4)")
+			(net 24 "unconnected-(IO1-R-Pad4)")
 			(pinfunction "R")
 			(pintype "input+no_connect")
 			(uuid "c5d7f3b1-bc9e-4d23-ad26-c4c6fd3df8f0")
@@ -759,7 +726,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 16 "unconnected-(U1-CV-Pad5)")
+			(net 23 "unconnected-(IO1-CV-Pad5)")
 			(pinfunction "CV")
 			(pintype "input+no_connect")
 			(uuid "1b1334f7-c1d2-4b3d-bba7-cd681de45df8")
@@ -770,7 +737,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 21 "TR_1")
+			(net 15 "TR_1")
 			(pinfunction "THR")
 			(pintype "input")
 			(uuid "a9edfbca-fe73-41d7-9dd8-59e1bbf8b229")
@@ -781,7 +748,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 15 "unconnected-(U1-DIS-Pad7)")
+			(net 14 "unconnected-(IO1-DIS-Pad7)")
 			(pinfunction "DIS")
 			(pintype "input+no_connect")
 			(uuid "18916d38-5d22-4ebd-9ae1-264e15a6c1e5")
@@ -797,6 +764,7 @@
 			(pintype "power_in")
 			(uuid "a5db1a37-3ffd-4296-9a5b-e474462aec34")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Package_DIP.3dshapes/DIP-8_W7.62mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -816,9 +784,9 @@
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/DO-41%20(Plastic).pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D5"
-			(at 5.08 -2.47 0)
+			(at 5.08 0 0)
 			(layer "F.SilkS")
-			(uuid "ac8fbdce-b331-4216-aa91-d0804250c0e7")
+			(uuid "c1121c85-7ae8-470d-ae67-c52fe25f430f")
 			(effects
 				(font
 					(size 1 1)
@@ -829,23 +797,10 @@
 		(property "Value" "1N4007"
 			(at 5.08 2.47 0)
 			(layer "F.Fab")
-			(uuid "9a674db6-8f06-462c-8b86-feb64751f94d")
+			(uuid "10ca2d21-32d9-41b5-9fc1-2cf0e972c701")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c21d3615-8421-490e-bc70-1e13f0544791")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -855,7 +810,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c7413835-82ee-4f62-84e6-0f2d18139173")
+			(uuid "4f3f31bf-4059-4cf8-bb72-fe76287e0abe")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -868,7 +823,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8b7265c0-c808-48a4-9fb8-d734a66a1ef3")
+			(uuid "f76089ab-81b8-4b3a-aec2-13a3a4fa8ac0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -904,7 +859,7 @@
 		)
 		(property ki_fp_filters "D*DO?41*")
 		(path "/faa3e1bc-272e-4818-bb8d-44fe4f48a094")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1177,11 +1132,12 @@
 			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 8 "Net-(D4-K)")
+			(net 7 "Net-(D4-K)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "1144cd2b-596b-47cf-9278-f93cc2b58ee0")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Diode_THT.3dshapes/D_DO-41_SOD81_P10.16mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1201,7 +1157,7 @@
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
 		(property "Reference" "J1"
-			(at 0 -2.33 0)
+			(at -2.25 1.275 0)
 			(layer "F.SilkS")
 			(uuid "cf7a7adb-e1cb-4e46-900c-eeb89b46e327")
 			(effects
@@ -1218,19 +1174,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "08c2a77e-0a60-4d1d-a4f9-228c6348b458")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1263,7 +1206,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/de98973e-254a-4e91-9b15-eeb8ad680e8b")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1433,7 +1376,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 7 "Net-(D2-A)")
+			(net 6 "Net-(D2-A)")
 			(pinfunction "Pin_1")
 			(pintype "passive")
 			(uuid "4d17bb69-700a-4323-856e-f49795a480e6")
@@ -1444,11 +1387,12 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 8 "Net-(D4-K)")
+			(net 7 "Net-(D4-K)")
 			(pinfunction "Pin_2")
 			(pintype "passive")
 			(uuid "8a41d8c0-8732-4459-87f9-a6b69f620e43")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1467,10 +1411,10 @@
 		(at 191.3 84.55 180)
 		(descr "8-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
-		(property "Reference" "U2"
-			(at 3.81 -2.33 0)
+		(property "Reference" "IO2"
+			(at 3.8 3.8 0)
 			(layer "F.SilkS")
-			(uuid "cdc01f55-381f-4ac3-a60a-aff0e780e191")
+			(uuid "b0a74d91-6280-4f61-8003-6c3e5959c7a8")
 			(effects
 				(font
 					(size 1 1)
@@ -1481,23 +1425,10 @@
 		(property "Value" "NE555P"
 			(at 3.81 9.95 0)
 			(layer "F.Fab")
-			(uuid "2456d9b6-0c0d-4455-9e2b-dd28e6f30690")
+			(uuid "8d77d0e1-12cc-4ae7-af72-24403be4a65a")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "bc5c39e4-e6da-4599-995b-bbf109b25eb6")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1507,7 +1438,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b383acaf-a521-4f12-a8da-01c3d68d6503")
+			(uuid "6fe68449-d8af-483f-97d8-c9acc0ebf9a9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1520,7 +1451,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8fec79d4-39bf-4731-8ef5-73c569e91a5b")
+			(uuid "99acb208-18da-4254-a8c4-d84186477732")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1530,7 +1461,7 @@
 		)
 		(property ki_fp_filters "DIP*W7.62mm*")
 		(path "/80dcc74a-8287-4cf1-b2c6-a0602e7420e0")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1712,7 +1643,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 22 "TR_2")
+			(net 16 "TR_2")
 			(pinfunction "TR")
 			(pintype "input")
 			(uuid "c4d4a7c7-4f64-4efd-a91a-20fe222263a1")
@@ -1723,7 +1654,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 10 "Q_2")
+			(net 9 "Q_2")
 			(pinfunction "Q")
 			(pintype "output")
 			(uuid "99effcb2-3aac-49cc-9673-5571ee7be68c")
@@ -1734,7 +1665,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 18 "unconnected-(U2-R-Pad4)")
+			(net 25 "unconnected-(IO2-R-Pad4)")
 			(pinfunction "R")
 			(pintype "input+no_connect")
 			(uuid "46b5cc80-cf2c-4681-a737-1f2a4cff8ba8")
@@ -1745,7 +1676,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 19 "unconnected-(U2-CV-Pad5)")
+			(net 26 "unconnected-(IO2-CV-Pad5)")
 			(pinfunction "CV")
 			(pintype "input+no_connect")
 			(uuid "62d77ddc-516c-4bf0-a798-393441647587")
@@ -1756,7 +1687,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 6 "TR")
+			(net 16 "TR_2")
 			(pinfunction "THR")
 			(pintype "input")
 			(uuid "44ef8f0f-eb5f-42da-a8c7-651a1044c017")
@@ -1767,7 +1698,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 20 "unconnected-(U2-DIS-Pad7)")
+			(net 27 "unconnected-(IO2-DIS-Pad7)")
 			(pinfunction "DIS")
 			(pintype "input+no_connect")
 			(uuid "a227a5eb-c51b-474c-a67d-2f94daf66295")
@@ -1783,6 +1714,7 @@
 			(pintype "power_in")
 			(uuid "79948dcb-7be0-4143-99a1-85a197602e13")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Package_DIP.3dshapes/DIP-8_W7.62mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1802,7 +1734,7 @@
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=6*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm  diameter 6mm width 2.5mm Capacitor")
 		(property "Reference" "C2"
-			(at 2.5 -2.5 90)
+			(at 2.42 -0.03 180)
 			(layer "F.SilkS")
 			(uuid "66f8c317-540a-4bdb-991a-26a9e1c766bd")
 			(effects
@@ -1823,21 +1755,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "897cc0ef-083e-4693-991a-f8086adb6d3e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1850,7 +1769,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1864,7 +1783,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/6501da63-8571-4c70-9bc6-7ca4855bc5d0")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2038,6 +1957,7 @@
 			(pintype "passive")
 			(uuid "d34bc1af-ff39-4da4-aea1-65956fad274f")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D6.0mm_W2.5mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2057,7 +1977,7 @@
 		(descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x01 2.54mm single row")
 		(property "Reference" "J3"
-			(at 0 -2.33 0)
+			(at 2.25 0 0)
 			(layer "F.SilkS")
 			(uuid "fb1d134b-b8a8-4e99-b998-d56ce1b52608")
 			(effects
@@ -2074,19 +1994,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f2dc8c8e-834a-46d3-b277-b75a2338d243")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2119,7 +2026,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/ff70a0e6-9dff-4a49-93e1-2a814e2b6dda")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2294,6 +2201,7 @@
 			(pintype "passive")
 			(uuid "fa09dfb5-179e-4a94-baa6-430d7d1f9282")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2313,7 +2221,7 @@
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/DO-41%20(Plastic).pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D2"
-			(at 5.08 -2.47 0)
+			(at 5.08 0 0)
 			(layer "F.SilkS")
 			(uuid "69057025-3e3a-48df-918e-44857d3fb436")
 			(effects
@@ -2330,19 +2238,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e306227f-b651-4423-8dce-0089c749f8e9")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2401,7 +2296,7 @@
 		)
 		(property ki_fp_filters "D*DO?41*")
 		(path "/70e68ea2-7001-4df4-bf65-05c3afffd683")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2674,11 +2569,12 @@
 			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 7 "Net-(D2-A)")
+			(net 6 "Net-(D2-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "a0bb29f2-9391-4e8a-97ba-a78f78454f27")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Diode_THT.3dshapes/D_DO-41_SOD81_P10.16mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2698,7 +2594,7 @@
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R7"
-			(at 5.08 -2.37 0)
+			(at 5.08 0 0)
 			(layer "F.SilkS")
 			(uuid "5ee059da-172f-4a92-83a6-ebe20961e1a6")
 			(effects
@@ -2715,19 +2611,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "65c0ef7d-880c-4d5e-bdf6-a6300f0d500e")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2760,7 +2643,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/dcdb3b2c-a329-4e10-bf87-bdd6306ba2c3")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2940,7 +2823,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 14 "Q_1")
+			(net 13 "Q_1")
 			(pintype "passive")
 			(uuid "0e975cae-7c95-4fd6-831f-acb2318d8de0")
 		)
@@ -2950,10 +2833,11 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 21 "TR_1")
+			(net 15 "TR_1")
 			(pintype "passive")
 			(uuid "7075ae06-a493-479a-9b42-c750a51c7584")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2973,7 +2857,7 @@
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/DO-41%20(Plastic).pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D3"
-			(at 5.08 -2.47 0)
+			(at 5.08 0 0)
 			(layer "F.SilkS")
 			(uuid "26c25763-4da3-4539-8ed9-25b03139e2e0")
 			(effects
@@ -2990,19 +2874,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "bc1c22a0-78b4-4fb0-ad33-720a59b3ff76")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3061,7 +2932,7 @@
 		)
 		(property ki_fp_filters "D*DO?41*")
 		(path "/03ec3bc6-3a69-4d77-ac19-a724c89f6393")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -3323,7 +3194,7 @@
 			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 7 "Net-(D2-A)")
+			(net 6 "Net-(D2-A)")
 			(pinfunction "K")
 			(pintype "passive")
 			(uuid "d168517f-c233-4bc7-be62-0fcf05bb153c")
@@ -3339,6 +3210,7 @@
 			(pintype "passive")
 			(uuid "87e14c7d-48d6-4b73-836f-022ecae1defa")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Diode_THT.3dshapes/D_DO-41_SOD81_P10.16mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3358,7 +3230,7 @@
 		(descr "CP, Radial series, Radial, pin pitch=2.50mm, , diameter=6.3mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor")
 		(property "Reference" "C1"
-			(at 1.25 -4.4 90)
+			(at 2.08 4.28 180)
 			(layer "F.SilkS")
 			(uuid "66420404-015e-4c2c-a0e7-5e592f572392")
 			(effects
@@ -3375,19 +3247,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "168389f9-b012-46c7-9824-cf0e6413edf7")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3420,7 +3279,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/092a4742-8dd3-464c-b074-bc92e08d2203")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -4790,7 +4649,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "bd6cf1fc-1151-49e8-9612-7f7cc77a4bd3")
 		)
@@ -4801,7 +4660,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "87fa1eb7-968a-49c7-9021-d1d02be4b541")
 		)
@@ -4832,7 +4691,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "3d03696a-80ba-4e7a-87aa-93aab51f997b")
 		)
@@ -4867,6 +4726,7 @@
 			(pintype "passive")
 			(uuid "adecfeac-6526-4796-a931-49ddd009b2b4")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_D6.3mm_P2.50mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4886,7 +4746,7 @@
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R3"
-			(at 5.08 -2.37 90)
+			(at 5.41 0.03 180)
 			(layer "F.SilkS")
 			(uuid "7a447dad-de13-4e45-ab9d-97fd65741db7")
 			(effects
@@ -4903,19 +4763,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0682824f-d1a3-4011-9c4a-3662566b17fe")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4948,7 +4795,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/96d12fcb-e5f1-4492-ac51-98c4a547c75f")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -5128,7 +4975,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 13 "Net-(R3-Pad1)")
+			(net 12 "Net-(R3-Pad1)")
 			(pintype "passive")
 			(uuid "73d03f01-4997-48f6-882b-99c15c06edab")
 		)
@@ -5142,6 +4989,7 @@
 			(pintype "passive")
 			(uuid "f81497fc-9fb4-4c16-b21c-eb30f7965865")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5161,7 +5009,7 @@
 		(descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D1"
-			(at 3.81 -2.12 0)
+			(at 3.81 0 0)
 			(layer "F.SilkS")
 			(uuid "f7ae1da8-498a-40ad-95e3-71483af123f4")
 			(effects
@@ -5178,19 +5026,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e7470103-8ead-4670-86cc-bd2b49ebbb76")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -5249,7 +5084,7 @@
 		)
 		(property ki_fp_filters "D*DO?35*")
 		(path "/ba4aaba1-ac7a-4343-9948-876001b2c32f")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -5527,6 +5362,7 @@
 			(pintype "passive")
 			(uuid "f206c22a-80e0-4850-a611-3721254e946b")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Diode_THT.3dshapes/D_DO-35_SOD27_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5546,7 +5382,7 @@
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R8"
-			(at 5.08 -2.37 90)
+			(at 5.33 0 180)
 			(layer "F.SilkS")
 			(uuid "19a6eb50-c1ab-416c-b799-282df2d37cc1")
 			(effects
@@ -5567,21 +5403,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2119e690-52b7-4bc9-8d3f-fb339f48d1b5")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5594,7 +5417,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5608,7 +5431,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/80afd388-9fcd-40da-b10b-e710925b0d8b")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -5788,7 +5611,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 11 "Net-(D8-K)")
+			(net 10 "Net-(D8-K)")
 			(pintype "passive")
 			(uuid "c3cdb11a-b646-4842-aa34-6be29c3f045e")
 		)
@@ -5798,10 +5621,11 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 14 "Q_1")
+			(net 13 "Q_1")
 			(pintype "passive")
 			(uuid "5818e2d4-a154-40ca-9ea0-de65af99dead")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5821,9 +5645,9 @@
 		(descr "LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf")
 		(tags "LED diameter 5.0mm 2 pins")
 		(property "Reference" "D7"
-			(at 1.27 -3.96 0)
+			(at -2.725 2.25 0)
 			(layer "F.SilkS")
-			(uuid "ed57a918-8d11-485e-9c65-dee80e2e685b")
+			(uuid "c290652c-3418-433e-89bd-7f507784d974")
 			(effects
 				(font
 					(size 1 1)
@@ -5834,23 +5658,10 @@
 		(property "Value" "LED"
 			(at 1.27 3.96 0)
 			(layer "F.Fab")
-			(uuid "5ead1f60-b52b-4e91-b954-25ed2f5b9932")
+			(uuid "f801985e-43b8-4264-80a0-5b5b2003a7ac")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_THT:LED_D5.0mm_Clear"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "894748e0-3e6b-45a0-9c85-2969281ecb3d")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -5860,7 +5671,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c7c25c3b-b60c-4151-a5cc-88726960a4ec")
+			(uuid "542f0370-3fd8-427a-857c-bf5acf68528f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5873,7 +5684,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b9bf4fe8-4c83-4b51-b3d6-313f92139f82")
+			(uuid "3b1189af-3116-4667-a110-d833df61fdb7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5883,7 +5694,7 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/f3a78a52-c938-40df-be89-19c8473287f0")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -5925,7 +5736,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "fcbd60a0-d76c-4c3b-b1ef-687cf09d3e14")
 		)
@@ -5997,7 +5808,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "b5ac0d40-f0c6-49f2-b736-911f8ee81c99")
 		)
@@ -6018,7 +5829,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 10 "Q_2")
+			(net 9 "Q_2")
 			(pinfunction "K")
 			(pintype "passive")
 			(uuid "abd7ed68-0495-4c8c-9e05-686ceac66e07")
@@ -6029,11 +5840,12 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 9 "Net-(D6-K)")
+			(net 8 "Net-(D6-K)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "55ef4452-c577-42d3-9f1c-8b715f89d187")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm_Clear.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6053,7 +5865,7 @@
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/DO-41%20(Plastic).pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D4"
-			(at 3.83 -9.72 0)
+			(at 5.08 0 0)
 			(layer "F.SilkS")
 			(uuid "c3b54e63-d9f9-45cc-b815-1516a000f1c5")
 			(effects
@@ -6070,19 +5882,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c1ca9549-a5eb-4cc8-8177-7fb35369ea46")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -6141,7 +5940,7 @@
 		)
 		(property ki_fp_filters "D*DO?41*")
 		(path "/d4dfc38d-fa3f-44f8-9a9f-8a94432bd612")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -6403,7 +6202,7 @@
 			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 8 "Net-(D4-K)")
+			(net 7 "Net-(D4-K)")
 			(pinfunction "K")
 			(pintype "passive")
 			(uuid "aa34a907-3a6c-4e5a-b481-392f7c47dac5")
@@ -6419,6 +6218,7 @@
 			(pintype "passive")
 			(uuid "bb89a2b5-b24c-42aa-91b0-1b855f004c4e")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Diode_THT.3dshapes/D_DO-41_SOD81_P10.16mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6438,7 +6238,7 @@
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R2"
-			(at 5.08 -2.37 90)
+			(at 4.75 0 180)
 			(layer "F.SilkS")
 			(uuid "51a6e145-8f03-4537-9b1d-28d970ba7f9d")
 			(effects
@@ -6459,21 +6259,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "709b69a8-5bcf-42e7-9852-d29ac469f749")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6486,7 +6273,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6500,7 +6287,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/7fe883e6-7ab3-41b9-ac8b-1b05afae48f3")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -6690,10 +6477,11 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 12 "DIVIDER")
+			(net 11 "DIVIDER")
 			(pintype "passive")
 			(uuid "4b159477-0bb3-41ff-a89f-bc090d17c7c5")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6713,7 +6501,7 @@
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R5"
-			(at 5.08 -2.37 90)
+			(at 5.41 0 180)
 			(layer "F.SilkS")
 			(uuid "14c0919d-420e-4ad1-8dc4-4005f8b4657f")
 			(effects
@@ -6730,19 +6518,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "46541c46-7da9-4f24-a7bd-10697c2a8f0b")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -6775,7 +6550,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/3d3704cb-7c6a-4137-aace-ddc4991e1974")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -6969,6 +6744,7 @@
 			(pintype "passive")
 			(uuid "97f77bbc-0d7a-456f-be42-76f45223b7cb")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6988,7 +6764,7 @@
 		(descr "LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf")
 		(tags "LED diameter 5.0mm 2 pins")
 		(property "Reference" "D6"
-			(at 1.27 -3.96 0)
+			(at 5.525 0 0)
 			(layer "F.SilkS")
 			(uuid "04e989e6-8883-4e16-bea9-c4ca73bc2ec2")
 			(effects
@@ -7005,19 +6781,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_THT:LED_D5.0mm_Clear"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "014c9f0a-3bf3-4bcc-bed8-d6330fc8126e")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -7050,7 +6813,7 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/0eb0b461-663f-432e-8f3a-ff2e779ffce6")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -7092,7 +6855,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "fa557d97-b049-4b3e-aca9-c91f1e67516a")
 		)
@@ -7164,7 +6927,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "a24eb006-cea5-405f-9ebe-5faa26794d53")
 		)
@@ -7185,7 +6948,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 9 "Net-(D6-K)")
+			(net 8 "Net-(D6-K)")
 			(pinfunction "K")
 			(pintype "passive")
 			(uuid "4c8bc7dc-2e45-4344-b71d-c6adb7a54337")
@@ -7196,11 +6959,12 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 10 "Q_2")
+			(net 9 "Q_2")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "e404d0f1-4f9d-4070-8bca-9d3d674069b9")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm_Clear.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -7220,7 +6984,7 @@
 		(descr "CP, Radial series, Radial, pin pitch=2.50mm, , diameter=6.3mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor")
 		(property "Reference" "C4"
-			(at 1.25 -4.4 90)
+			(at 3.17 -4.03 180)
 			(layer "F.SilkS")
 			(uuid "6d79c5cd-91c0-4c69-b0fd-60a880356296")
 			(effects
@@ -7241,21 +7005,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b418aaf5-001c-492c-8200-76a869e8fb87")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7268,7 +7019,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7282,7 +7033,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/12bab64e-f744-48c4-a8e6-d539b0b6ca2d")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -8652,7 +8403,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "3a7da53e-4b1c-4dd4-bb92-66192427d473")
 		)
@@ -8663,7 +8414,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "b568b479-8c70-425b-8cf5-ca5880041fe6")
 		)
@@ -8694,7 +8445,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "6ccf70c5-ee13-4140-826b-e75e4537b500")
 		)
@@ -8729,6 +8480,7 @@
 			(pintype "passive")
 			(uuid "22f0ee95-4411-4a1e-a5fe-1a2379c67ea9")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_D6.3mm_P2.50mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8744,12 +8496,13 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
 		(layer "F.Cu")
 		(uuid "98d0066c-2632-4e31-953a-c467759927e1")
-		(at 226.25 85.25)
+		(at 205.5 83.5)
 		(descr "Mounting Hole 3.2mm, M3, DIN965")
 		(tags "mounting hole 3.2mm m3 din965")
 		(property "Reference" "H1"
 			(at 2.25 -6.05 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "b4adeaf2-e551-4fa5-9184-48d750452c14")
 			(effects
 				(font
@@ -8765,19 +8518,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "49dd47d6-bd0b-4eb3-bace-ffd66cda6fdf")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -8810,7 +8550,7 @@
 		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/c64bd665-c262-4687-982b-29aac8846dec")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
@@ -8820,7 +8560,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "01a172eb-fba6-4824-9650-1d2cc9748b9b")
 		)
@@ -8831,7 +8571,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "657ce424-d759-4cf8-9621-df904cf4cdde")
 		)
@@ -8852,7 +8592,7 @@
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 24 "unconnected-(H1-Pad1)_1")
+			(net 18 "unconnected-(H1-Pad1)_1")
 			(pinfunction "1")
 			(pintype "input+no_connect")
 			(uuid "5c7e73c4-1e59-4894-a069-910cd07790e4")
@@ -8861,7 +8601,7 @@
 			(at 0 0)
 			(size 5.6 5.6)
 			(layers "F.Cu" "F.Mask")
-			(net 25 "unconnected-(H1-Pad1)_2")
+			(net 19 "unconnected-(H1-Pad1)_2")
 			(pinfunction "1")
 			(pintype "input+no_connect")
 			(uuid "62ac1f12-0cc2-4d73-99f3-b49d203c9e9e")
@@ -8870,11 +8610,12 @@
 			(at 0 0)
 			(size 5.6 5.6)
 			(layers "B.Cu" "B.Mask")
-			(net 23 "unconnected-(H1-Pad1)")
+			(net 17 "unconnected-(H1-Pad1)")
 			(pinfunction "1")
 			(pintype "input+no_connect")
 			(uuid "53a0c161-90f3-41c9-bdd5-035f1ff894d9")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 		(layer "F.Cu")
@@ -8883,7 +8624,7 @@
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R6"
-			(at 5.08 -2.37 90)
+			(at 5.08 0 180)
 			(layer "F.SilkS")
 			(uuid "f7829e8a-aff1-4bf8-847d-e5a93b05cc5a")
 			(effects
@@ -8900,19 +8641,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6ee6fcdb-61b2-41cf-b633-1dd3c761556a")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -8945,7 +8673,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/1a513e0f-929c-4353-a1ea-6e4746fd8144")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -9125,7 +8853,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 10 "Q_2")
+			(net 9 "Q_2")
 			(pintype "passive")
 			(uuid "354e643d-7121-44ad-95ec-15b0f5f9e363")
 		)
@@ -9135,10 +8863,11 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 22 "TR_2")
+			(net 16 "TR_2")
 			(pintype "passive")
 			(uuid "002e8c77-3d2c-47b2-9d7a-dcafbfcca33a")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -9158,7 +8887,7 @@
 		(descr "CP, Radial series, Radial, pin pitch=2.50mm, , diameter=6.3mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor")
 		(property "Reference" "C3"
-			(at 1.25 -4.4 90)
+			(at -3 0 180)
 			(layer "F.SilkS")
 			(uuid "2e368f95-16b9-4a67-bb7e-f1aa7297b9e0")
 			(effects
@@ -9179,21 +8908,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3674b0b8-d0de-4248-ba14-f255284f678b")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9206,7 +8922,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -9220,7 +8936,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/bfa6a457-0f38-465d-b280-1d158092d93a")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -10590,7 +10306,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "0649e977-c993-4cbf-be4d-7aa954f2aade")
 		)
@@ -10601,7 +10317,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "df3d0e4b-7813-47fc-96db-ae24dcbe2778")
 		)
@@ -10632,7 +10348,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "63594b13-645b-4265-ad93-c1424b03ada0")
 		)
@@ -10667,6 +10383,7 @@
 			(pintype "passive")
 			(uuid "efee6538-3dec-48a5-b418-a3fab244c727")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_D6.3mm_P2.50mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -10686,7 +10403,7 @@
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R1"
-			(at 5.08 -2.37 90)
+			(at 5.41 0 180)
 			(layer "F.SilkS")
 			(uuid "f0889886-56f6-4dd7-bf1e-933ece282b8a")
 			(effects
@@ -10703,19 +10420,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "67d368e1-a0b0-4a2d-a988-2844d86f6c05")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -10748,7 +10452,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/59f415c0-d0ab-46bc-8f4c-b4e899e04789")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -10928,7 +10632,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 12 "DIVIDER")
+			(net 11 "DIVIDER")
 			(pintype "passive")
 			(uuid "53b9e9e8-2a59-4072-8533-7c2d0f7a8cf6")
 		)
@@ -10942,6 +10646,7 @@
 			(pintype "passive")
 			(uuid "4aa663d8-290e-43f9-b8c4-a0651fc55ba1")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -10961,7 +10666,7 @@
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R4"
-			(at 5.08 -2.37 90)
+			(at 4.75 0 180)
 			(layer "F.SilkS")
 			(uuid "8be92ae3-58e4-4dec-8d37-2fc6fd8df9f1")
 			(effects
@@ -10982,21 +10687,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2ad14f15-0d9b-4da9-ba45-a8d04c2ced1a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11009,7 +10701,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11023,7 +10715,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/2ddc600f-a08d-4568-bcdb-94933bb89d22")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -11213,10 +10905,11 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 13 "Net-(R3-Pad1)")
+			(net 12 "Net-(R3-Pad1)")
 			(pintype "passive")
 			(uuid "460ee9b4-4971-426f-bf21-c1f59a48e586")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -11236,7 +10929,7 @@
 		(descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x01 2.54mm single row")
 		(property "Reference" "J2"
-			(at 0 -2.33 0)
+			(at 2.25 -0.1 0)
 			(layer "F.SilkS")
 			(uuid "8d7dba6a-7671-4a87-b8b9-e956aee4623e")
 			(effects
@@ -11253,19 +10946,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "75bff118-6bbf-4d01-aa9f-f41d763d064b")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -11298,7 +10978,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/8452cf8b-8fba-4367-82ff-6f9a9a22745d")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -11468,11 +11148,12 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 12 "DIVIDER")
+			(net 11 "DIVIDER")
 			(pinfunction "Pin_1")
 			(pintype "passive")
 			(uuid "80126601-2fe4-436f-a218-40ae74a10f75")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -11492,7 +11173,7 @@
 		(descr "LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf")
 		(tags "LED diameter 5.0mm 2 pins")
 		(property "Reference" "D8"
-			(at 1.27 -3.96 0)
+			(at -2.725 0 0)
 			(layer "F.SilkS")
 			(uuid "0d1e4958-1cd7-410a-b132-6fc944858152")
 			(effects
@@ -11509,19 +11190,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_THT:LED_D5.0mm_Clear"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "577a30c3-daff-4925-8820-b081deece6a3")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -11554,7 +11222,7 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/34d7890a-408e-472e-9d8a-a326ff69804e")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -11596,7 +11264,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "9aae815f-156c-4d77-a16f-9d2a1521cf23")
 		)
@@ -11668,7 +11336,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "b07c3c49-cbd5-4015-a4b5-8bc78c5ac329")
 		)
@@ -11689,7 +11357,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 11 "Net-(D8-K)")
+			(net 10 "Net-(D8-K)")
 			(pinfunction "K")
 			(pintype "passive")
 			(uuid "290d8b7c-c7eb-49a5-975a-947ee17a3af6")
@@ -11700,11 +11368,12 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 9 "Net-(D6-K)")
+			(net 8 "Net-(D6-K)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "98b0c32d-9baa-402e-b0ef-e8b6355aaae0")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm_Clear.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -11724,9 +11393,9 @@
 		(descr "CP, Radial series, Radial, pin pitch=2.50mm, , diameter=6.3mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor")
 		(property "Reference" "C6"
-			(at 1.25 -4.4 90)
+			(at -2.5 1.5 180)
 			(layer "F.SilkS")
-			(uuid "38d1b198-45a5-4d81-9488-ea76dc92616d")
+			(uuid "d7a7fbd0-aade-4fa5-b2c9-be73a0b34b9d")
 			(effects
 				(font
 					(size 1 1)
@@ -11737,23 +11406,10 @@
 		(property "Value" "1uF/50V"
 			(at 1.25 4.4 90)
 			(layer "F.Fab")
-			(uuid "396a6e41-3504-421f-8a9c-2d5bc09298c6")
+			(uuid "c020a1f3-2d18-4543-a2d4-c0c0e822cc61")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "01d14c3d-25cf-4dfb-8460-972f21d8174f")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -11763,7 +11419,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "19d9b463-5733-4f30-b651-5d60e79275a9")
+			(uuid "5eae7b04-9069-4ed3-8db5-5cd7cb82e7c1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11776,7 +11432,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5640f26c-c0a6-4755-a23c-bcc4bda590d7")
+			(uuid "f7aa77c9-ad1b-4a02-b8fe-95f6d4db6711")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11786,7 +11442,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/00685df3-661c-4a27-843b-9157f957c1cc")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -13156,7 +12812,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "98ea5467-7031-46e2-846c-0ec06f75987b")
 		)
@@ -13167,7 +12823,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "fc9aaecd-2024-4e1d-b9cf-c5579b1fe837")
 		)
@@ -13198,7 +12854,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "e5117821-0ff5-49a0-ba97-d09e32b7def7")
 		)
@@ -13219,7 +12875,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 6 "TR")
+			(net 16 "TR_2")
 			(pintype "passive")
 			(uuid "e9d446e4-abfb-4a85-abe5-e007fa57c17b")
 		)
@@ -13233,6 +12889,7 @@
 			(pintype "passive")
 			(uuid "43de449c-ad55-417a-89bd-c28839fa4c85")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_D6.3mm_P2.50mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -13252,7 +12909,7 @@
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=6*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm  diameter 6mm width 2.5mm Capacitor")
 		(property "Reference" "C5"
-			(at 2.5 -2.5 0)
+			(at 2.5 0 0)
 			(layer "F.SilkS")
 			(uuid "7f6724f0-4d90-4aa2-a5a3-323fb23b2abc")
 			(effects
@@ -13269,19 +12926,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "cdd3ae66-f04e-40d7-a023-7b377ecf346d")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -13314,7 +12958,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/516c43fd-e50e-464a-b693-0ccf7662e1b9")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Police_lights.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -13474,7 +13118,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 21 "TR_1")
+			(net 15 "TR_1")
 			(pintype "passive")
 			(uuid "bdfb532d-ca4e-4a2d-bc7c-e78d42fa7e28")
 		)
@@ -13488,6 +13132,7 @@
 			(pintype "passive")
 			(uuid "e2056ed0-1c14-459a-a26c-70eb228a93a3")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D6.0mm_W2.5mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -13830,15 +13475,32 @@
 	)
 	(dimension
 		(type aligned)
-		(layer "F.Cu")
+		(layer "Dwgs.User")
 		(uuid "17b478a6-74ff-4a0e-9264-ac479217d812")
 		(pts
 			(xy 208.75 55.75) (xy 149.25 55.75)
 		)
 		(height 8.749999)
-		(gr_text "59.5000 mm"
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 4)
+			(suppress_zeroes yes)
+		)
+		(style
+			(thickness 0.2)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(arrow_direction outward)
+			(extension_height 0.58642)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
+		(gr_text "59.5 mm"
 			(at 179 45.200001 0)
-			(layer "F.Cu")
+			(layer "Dwgs.User")
 			(uuid "17b478a6-74ff-4a0e-9264-ac479217d812")
 			(effects
 				(font
@@ -13847,31 +13509,35 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Dwgs.User")
+		(uuid "7104f2e9-c2e2-46dc-815e-7e5cc3d1e906")
+		(pts
+			(xy 208 55) (xy 208 86.75)
+		)
+		(height -8.5)
 		(format
 			(prefix "")
 			(suffix "")
 			(units 3)
 			(units_format 1)
 			(precision 4)
+			(suppress_zeroes yes)
 		)
 		(style
 			(thickness 0.2)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "F.Cu")
-		(uuid "7104f2e9-c2e2-46dc-815e-7e5cc3d1e906")
-		(pts
-			(xy 208 55) (xy 208 86.75)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
 		)
-		(height -8.5)
-		(gr_text "31.7500 mm"
+		(gr_text "31.75 mm"
 			(at 214.7 70.875 90)
-			(layer "F.Cu")
+			(layer "Dwgs.User")
 			(uuid "7104f2e9-c2e2-46dc-815e-7e5cc3d1e906")
 			(effects
 				(font
@@ -13880,19 +13546,6 @@
 				)
 			)
 		)
-		(format
-			(prefix "")
-			(suffix "")
-			(units 3)
-			(units_format 1)
-			(precision 4)
-		)
-		(style
-			(thickness 0.2)
-			(arrow_length 1.27)
-			(text_position_mode 0)
-			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
 	)
 	(segment
 		(start 180.75 76.959189)
@@ -14391,43 +14044,11 @@
 		(uuid "ae48e661-645b-4c2f-a1d7-18a6f4bf8ce4")
 	)
 	(segment
-		(start 179.25 70.167208)
-		(end 182.25 73.167208)
-		(width 0.7)
-		(layer "B.Cu")
-		(net 6)
-		(uuid "4549785d-5ad3-402c-8a23-7a6fb48e93e2")
-	)
-	(segment
-		(start 179.25 65.68238)
-		(end 179.25 70.167208)
-		(width 0.7)
-		(layer "B.Cu")
-		(net 6)
-		(uuid "bc7905f7-de3e-46eb-ac9c-8c45dc5c9239")
-	)
-	(segment
-		(start 182.25 78.04)
-		(end 183.68 79.47)
-		(width 0.7)
-		(layer "B.Cu")
-		(net 6)
-		(uuid "e4d9facb-defe-4b8b-9dfc-4d28f4d164b6")
-	)
-	(segment
-		(start 182.25 73.167208)
-		(end 182.25 78.04)
-		(width 0.7)
-		(layer "B.Cu")
-		(net 6)
-		(uuid "ed6a3672-6343-461a-b7fe-f9451fdf5213")
-	)
-	(segment
 		(start 156.945 63.475)
 		(end 157.17 63.25)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 7)
+		(net 6)
 		(uuid "a8f6e6b4-bc17-4961-869e-16bd4011927a")
 	)
 	(segment
@@ -14435,7 +14056,7 @@
 		(end 156.945 63.475)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 7)
+		(net 6)
 		(uuid "b83c712b-af81-4323-9316-eebfa93765a6")
 	)
 	(segment
@@ -14443,7 +14064,7 @@
 		(end 157.17 63.25)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 7)
+		(net 6)
 		(uuid "edfed719-de25-4ec4-ab58-f8e3a57833eb")
 	)
 	(segment
@@ -14451,7 +14072,7 @@
 		(end 157.17 66.5)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 8)
+		(net 7)
 		(uuid "434ebedc-df55-4066-a8e6-82f4658944db")
 	)
 	(segment
@@ -14459,7 +14080,7 @@
 		(end 156.685 66.015)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 8)
+		(net 7)
 		(uuid "67493208-31c2-4b19-8edf-0d5f5f06486a")
 	)
 	(segment
@@ -14467,7 +14088,7 @@
 		(end 157.17 69.75)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 8)
+		(net 7)
 		(uuid "bd88472b-a0cc-4d99-8ab6-aaaa78d88cfc")
 	)
 	(segment
@@ -14475,7 +14096,7 @@
 		(end 197.725 75.5)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 9)
+		(net 8)
 		(uuid "3734074c-2712-476b-9b4c-f66cccc6bd35")
 	)
 	(segment
@@ -14483,7 +14104,7 @@
 		(end 197.735 75.51)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 9)
+		(net 8)
 		(uuid "66279437-7e7f-454f-a2d9-22d041567571")
 	)
 	(segment
@@ -14491,7 +14112,7 @@
 		(end 197.725 61.025)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 9)
+		(net 8)
 		(uuid "7778357c-a8cb-4c96-a4d4-7a6e554b6497")
 	)
 	(segment
@@ -14499,7 +14120,7 @@
 		(end 197.725 68.25)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 9)
+		(net 8)
 		(uuid "82fdff94-7321-429d-8ac3-79e716f585b5")
 	)
 	(segment
@@ -14507,7 +14128,7 @@
 		(end 197.735 61.015)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 9)
+		(net 8)
 		(uuid "cb7e8a09-1804-4833-a4c4-87d58949cffa")
 	)
 	(segment
@@ -14515,7 +14136,7 @@
 		(end 197.725 75.5)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 9)
+		(net 8)
 		(uuid "fb87c212-0778-4fd1-9db3-fbdf4dc67a8e")
 	)
 	(segment
@@ -14523,7 +14144,7 @@
 		(end 194.25 82.17)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 10)
+		(net 9)
 		(uuid "14e1b316-4178-4ef1-9874-80b81ed93f5a")
 	)
 	(segment
@@ -14531,7 +14152,7 @@
 		(end 200.275 82.75)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 10)
+		(net 9)
 		(uuid "1f600af1-d421-4ed1-b842-b8a5a15582ae")
 	)
 	(segment
@@ -14539,7 +14160,7 @@
 		(end 200.265 82.74)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 10)
+		(net 9)
 		(uuid "7a011b89-a917-4e44-8d2b-dd5af2db7335")
 	)
 	(segment
@@ -14547,7 +14168,7 @@
 		(end 194.25 85.33)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 10)
+		(net 9)
 		(uuid "ba401889-912c-43dc-9704-3f2f842c413c")
 	)
 	(segment
@@ -14555,7 +14176,7 @@
 		(end 197.695 85.33)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 10)
+		(net 9)
 		(uuid "cf635fd9-a6b0-4b70-924d-f86d33184f8e")
 	)
 	(segment
@@ -14563,7 +14184,7 @@
 		(end 200.275 82.75)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 10)
+		(net 9)
 		(uuid "d7675397-3ba2-42bb-8a78-20b6d3ec3f11")
 	)
 	(segment
@@ -14571,7 +14192,7 @@
 		(end 200.275 61)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 11)
+		(net 10)
 		(uuid "21ff444e-1f17-47e8-b2c4-60ae1aec3e9c")
 	)
 	(segment
@@ -14579,7 +14200,7 @@
 		(end 200.265 61.01)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 11)
+		(net 10)
 		(uuid "66923e10-c6c4-425b-b6e5-1d05e54622a1")
 	)
 	(segment
@@ -14587,7 +14208,7 @@
 		(end 200.275 61)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 11)
+		(net 10)
 		(uuid "9d1602a0-6a95-4238-8252-455a7256bcfd")
 	)
 	(segment
@@ -14595,7 +14216,7 @@
 		(end 198.195 58.92)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 11)
+		(net 10)
 		(uuid "e3af0170-dc73-40dd-92f9-005fdab4f7ea")
 	)
 	(segment
@@ -14603,7 +14224,7 @@
 		(end 157.25 83.41)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 12)
+		(net 11)
 		(uuid "22267831-af77-4e90-aa45-4ef70e45374e")
 	)
 	(segment
@@ -14611,7 +14232,7 @@
 		(end 154 80.16)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 12)
+		(net 11)
 		(uuid "88b51a79-d783-422b-aaca-4407ec6a7364")
 	)
 	(segment
@@ -14619,7 +14240,7 @@
 		(end 160.25 83.41)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 12)
+		(net 11)
 		(uuid "ddb94625-5667-43b2-b3c6-713f5541d49e")
 	)
 	(segment
@@ -14627,7 +14248,7 @@
 		(end 169.25 83.41)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 13)
+		(net 12)
 		(uuid "ad3aead0-8a28-4549-9f64-e8e242a6e775")
 	)
 	(segment
@@ -14635,7 +14256,7 @@
 		(end 194.25 71.92)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 14)
+		(net 13)
 		(uuid "1aadb883-f5dd-4558-8c1b-c2fa49edf547")
 	)
 	(segment
@@ -14643,7 +14264,7 @@
 		(end 187.84 69.17)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 14)
+		(net 13)
 		(uuid "3da3d3e9-a436-48e7-9df8-446b2409ed9d")
 	)
 	(segment
@@ -14651,7 +14272,7 @@
 		(end 194.25 69.08)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 14)
+		(net 13)
 		(uuid "69b9c4d8-322f-4830-9e59-cc3e5ebbcb04")
 	)
 	(segment
@@ -14659,7 +14280,7 @@
 		(end 194.25 69.08)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 14)
+		(net 13)
 		(uuid "7503ad17-4063-4fda-baa7-b0c8c0e57ed9")
 	)
 	(segment
@@ -14667,7 +14288,7 @@
 		(end 194.16 69.17)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 14)
+		(net 13)
 		(uuid "9b3e6383-0a47-4476-9c4f-28b932aaca55")
 	)
 	(segment
@@ -14675,7 +14296,7 @@
 		(end 191.57 65.28)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 21)
+		(net 15)
 		(uuid "4709281f-5cb5-45e1-87d9-dcf9397cfc98")
 	)
 	(segment
@@ -14683,7 +14304,7 @@
 		(end 182.6 70.26)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 21)
+		(net 15)
 		(uuid "878eded1-3d90-489d-9f02-314c82a1f102")
 	)
 	(segment
@@ -14691,7 +14312,7 @@
 		(end 183.95 62.74)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 21)
+		(net 15)
 		(uuid "8f69c580-cd99-45ab-92d1-248132fe107b")
 	)
 	(segment
@@ -14699,7 +14320,7 @@
 		(end 182.6 64.09)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 21)
+		(net 15)
 		(uuid "ac8985c2-980e-4e26-a845-40f9f1af5eff")
 	)
 	(segment
@@ -14707,7 +14328,7 @@
 		(end 189.03 62.74)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 21)
+		(net 15)
 		(uuid "aff1030f-62f0-4eac-94c0-87eae17d2646")
 	)
 	(segment
@@ -14715,7 +14336,7 @@
 		(end 183.95 62.74)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 21)
+		(net 15)
 		(uuid "c3dbd902-9b0c-4c07-b431-508797ddfb6b")
 	)
 	(segment
@@ -14723,23 +14344,47 @@
 		(end 181.5 60.29)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 21)
+		(net 15)
 		(uuid "d35aa791-1f8e-4e0a-b911-186279f05392")
+	)
+	(segment
+		(start 191.3 82.01)
+		(end 186.22 82.01)
+		(width 0.7)
+		(layer "F.Cu")
+		(net 16)
+		(uuid "430dc634-59e6-450e-8c6b-ac6a772c130d")
+	)
+	(segment
+		(start 186.22 82.01)
+		(end 183.68 79.47)
+		(width 0.7)
+		(layer "F.Cu")
+		(net 16)
+		(uuid "65fee75e-8e4b-4b53-ba56-780308ea2729")
 	)
 	(segment
 		(start 191.3 82.26)
 		(end 191.3 82.01)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 22)
+		(net 16)
 		(uuid "3ced5b89-6671-4f98-a192-f39023281719")
+	)
+	(segment
+		(start 179.25 70.167208)
+		(end 182.25 73.167208)
+		(width 0.7)
+		(layer "B.Cu")
+		(net 16)
+		(uuid "4549785d-5ad3-402c-8a23-7a6fb48e93e2")
 	)
 	(segment
 		(start 189.75 80.46)
 		(end 189.75 76.25)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 22)
+		(net 16)
 		(uuid "ab12037f-0abc-4ce4-b402-61fa65e91456")
 	)
 	(segment
@@ -14747,7 +14392,7 @@
 		(end 190.83 75.17)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 22)
+		(net 16)
 		(uuid "b225f4f0-f917-440d-8a10-96b00d9d9177")
 	)
 	(segment
@@ -14755,15 +14400,40 @@
 		(end 194.25 75.17)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 22)
+		(net 16)
 		(uuid "b5ec6291-2592-49cb-92b5-d6d4ba6dd81c")
+	)
+	(segment
+		(start 179.25 65.68238)
+		(end 179.25 70.167208)
+		(width 0.7)
+		(layer "B.Cu")
+		(net 16)
+		(uuid "bc7905f7-de3e-46eb-ac9c-8c45dc5c9239")
+	)
+	(segment
+		(start 182.25 78.04)
+		(end 183.68 79.47)
+		(width 0.7)
+		(layer "B.Cu")
+		(net 16)
+		(uuid "e4d9facb-defe-4b8b-9dfc-4d28f4d164b6")
+	)
+	(segment
+		(start 182.25 73.167208)
+		(end 182.25 78.04)
+		(width 0.7)
+		(layer "B.Cu")
+		(net 16)
+		(uuid "ed6a3672-6343-461a-b7fe-f9451fdf5213")
 	)
 	(segment
 		(start 191.3 82.01)
 		(end 189.75 80.46)
 		(width 0.7)
 		(layer "B.Cu")
-		(net 22)
+		(net 16)
 		(uuid "fb247cc9-0804-4678-8330-cc1a4eabe1ee")
 	)
+	(embedded_fonts no)
 )
