@@ -100,14 +100,14 @@ void loop() {
 
   switch(state) {
     case STATE_WAITING:
-      if(armChange == 1) {  // Arm button.
+      if(armChange == 1 && armVal == 0) {  // Arm button.
         state = STATE_ARMED;
       }
 
       break;
 
     case STATE_ARMED:
-      if(gateChange == 1) {
+      if(gateChange == 1 && gateVal == 0) {
         state          = STATE_RUNNING;
         timerStartTime = millis();
       }
@@ -115,9 +115,9 @@ void loop() {
       break;
     case STATE_RUNNING:
 
-      if(armChange == 1) {
+      if(armChange == 1 && armVal == 0) {
         state = STATE_WAITING;
-      } else if(resetChange == 1) {
+      } else if(resetChange == 1 && resetVal == 0) {
         state = STATE_ARMED;
       }
 
@@ -148,16 +148,16 @@ void loop() {
 
       displayBufferChanged = 1;
 
-      if(gateChange == 1) {
+      if(gateChange == 1 && gateVal == 0) {
         state = STATE_END;
       }
 
       break;
 
     case STATE_END:
-      if(resetChange == 1) {
+      if(resetChange == 1 && resetVal == 0) {
         state = STATE_ARMED;
-      } else if(stopChange) {
+      } else if(stopChange && stopVal == 0) {
         state = STATE_WAITING;
       }
 
