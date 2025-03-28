@@ -167,7 +167,9 @@ void loop() {
       displayBufferChanged = 1;
 
       if(gateChange == 1 && gateVal == 0) {
-        state = STATE_END;
+        if(timerTime > 1000) {
+          state = STATE_END;
+        }      
       }
 
       break;
