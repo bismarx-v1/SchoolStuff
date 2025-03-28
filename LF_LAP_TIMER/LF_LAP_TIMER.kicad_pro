@@ -621,7 +621,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "LF_LAP_TIMER.step",
       "svg": "",
       "vrml": ""
     },
