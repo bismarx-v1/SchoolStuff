@@ -1,11 +1,15 @@
-#include <Arduino.h>
+/**
+ * DEBUG: Program freezes when going to "running" mode.
+ */
+#include <Arduino.h>  
 #include "LiquidCrystal_I2C.h"
 
+#define DEBUG 1
 
 #define PIN_GATE      2
-#define PIN_BTN_ARM   3
-#define PIN_BTN_STOP  4
-#define PIN_BTN_RESET 5
+#define PIN_BTN_ARM   5
+#define PIN_BTN_STOP  6
+#define PIN_BTN_RESET 7
 
 #define DISPLAY_ADDRESS 0x27
 #define DISPLAY_COLUMNS 16
@@ -53,6 +57,9 @@ bool resetVal;
 char displayBuffer[DISPLAY_CHARS];
 
 void setup() {
+  #if DEBUG == 1
+  Serial.begin(115200);
+  #endif
   pinMode(PIN_GATE, INPUT);
   pinMode(PIN_BTN_ARM, INPUT);
   pinMode(PIN_BTN_STOP, INPUT);
@@ -76,6 +83,7 @@ void setup() {
 
 
 void loop() {
+  
   static uint8_t  state        = 0;
   static int64_t  deltaTimeVar = 0;
   bool            gateChange;
@@ -90,7 +98,7 @@ void loop() {
   bool            displayBufferChanged = 0;
 
 
-
+  
   checkPin(PIN_GATE, &gateVal, &gateChange);
   checkPin(PIN_BTN_ARM, &armVal, &armChange);
   checkPin(PIN_BTN_STOP, &stopVal, &stopChange);
@@ -104,14 +112,24 @@ void loop() {
         state = STATE_ARMED;
       }
 
+      for(uint8_t idx = 0; idx < 7; idx++) {
+        displayBuffer[idx] = "WAITING"[idx];
+      }
+      displayBufferChanged = 1;
+
       break;
 
     case STATE_ARMED:
-      if(gateChange == 1 && gateVal == 0) {
+    if(gateChange == 1 && gateVal == 0) {
         state          = STATE_RUNNING;
         timerStartTime = millis();
       }
 
+      for(uint8_t idx = 0; idx < 7; idx++) {
+        displayBuffer[idx] = "ARMED  "[idx];
+      }
+      displayBufferChanged = 1;
+      
       break;
     case STATE_RUNNING:
 
@@ -141,7 +159,7 @@ void loop() {
       for(uint8_t idx = 1; idx >= 0; idx--) {
         displayBuffer[idx + DISPLAY_TIMER_OFFSET + 4] = (timerS / (10 ^ idx)) % (10 ^ (idx + 1));
       }
-
+      
       for(uint8_t idx = 1; idx >= 0; idx--) {
         displayBuffer[idx + DISPLAY_TIMER_OFFSET + 6] = (timerMs / (10 ^ idx)) % (10 ^ (idx + 1));
       }
@@ -166,7 +184,7 @@ void loop() {
     default:
       state = 0;
       break;
-  }
+    }
 
   if(displayBufferChanged == 1) {
 #if DISPLAY_TYPE == 1
@@ -177,8 +195,19 @@ void loop() {
     Serial.print(displayBuffer);
 #endif
   }
-
-
+  
+  #if DEBUG == 1
+  Serial.print("Arm: ");
+  Serial.print(digitalRead(PIN_BTN_ARM));
+  Serial.print("\tRst: ");
+  Serial.print(digitalRead(PIN_BTN_RESET));
+  Serial.print("\tStp: ");
+  Serial.print(digitalRead(PIN_BTN_STOP));
+  Serial.print("\tGte: ");
+  Serial.print(digitalRead(PIN_GATE));
+  Serial.print("\tTime: ");
+  Serial.println(timerTime);
+  #endif
 
   deltaTimeVar = deltaTime();
   if(MS_PER_LOOP - deltaTimeVar > 0) {
