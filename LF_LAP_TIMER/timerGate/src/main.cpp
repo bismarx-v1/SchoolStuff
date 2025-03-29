@@ -4,7 +4,7 @@
 #include <Arduino.h>
 #include "LiquidCrystal_I2C.h"
 
-#define DEBUG 1
+#define DEBUG 0
 
 #define PIN_GATE      2
 #define PIN_BTN_ARM   5
