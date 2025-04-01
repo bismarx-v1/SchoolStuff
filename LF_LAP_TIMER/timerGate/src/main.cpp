@@ -2,9 +2,9 @@
 #include "LiquidCrystal_I2C.h"
 
 
-#define DEBUG        0
-#define DEBUG_MSPF   1
-#define DISPLAY_TYPE 1  // 0 - soft, 1 - real.
+#define DEBUG                     0
+#define DEBUG_MSPF                1
+#define DISPLAY_TYPE              1  // 0 - soft, 1 - real.
 #define GATE_RETRIGGER_BLOCK_TIME 5000
 
 #define PIN_GATE      2
@@ -52,7 +52,6 @@
   }
 
 
-
 LiquidCrystal_I2C lcd(DISPLAY_ADDRESS, DISPLAY_COLUMNS, DISPLAY_ROWS);
 
 
@@ -75,13 +74,33 @@ int32_t deltaTime() {
 
 
 bool gateVal;
+bool gateChange;
 bool armVal;
 bool stopVal;
 bool resetVal;
 char displayBuffer[DISPLAY_CHARS];
 char stupidDisplayBuffer[DISPLAY_ROWS][DISPLAY_COLUMNS];
 
+void hotfixGateUpdate() {
+  static uint32_t timeLast = 0;
+  Serial.print("Interrupt");
+  uint32_t timeNow = millis();
+  
+  *(&gateChange) = 0;
+  if(timeLast + 500 < timeNow) {
+    bool pinVal    = digitalRead(2);
+    Serial.print((pinVal?"RISING":"FALLING"));
+    if(pinVal != *(&gateVal)) {
+      *(&gateVal)    = pinVal;
+      *(&gateChange) = 1;
+    }
+    timeLast = timeNow;
+  }
+  Serial.print('\n');
+}
+
 void setup() {
+  Serial.begin(115200);
 #if DEBUG == 1
   Serial.begin(115200);
 #endif
@@ -89,6 +108,7 @@ void setup() {
   pinMode(PIN_BTN_ARM, INPUT);
   pinMode(PIN_BTN_STOP, INPUT);
   pinMode(PIN_BTN_RESET, INPUT);
+  attachInterrupt(digitalPinToInterrupt(2), hotfixGateUpdate, CHANGE);
 
   gateVal  = digitalRead(PIN_GATE);
   armVal   = digitalRead(PIN_BTN_ARM);
@@ -103,7 +123,7 @@ void setup() {
   Serial.begin(115200);
 #endif
 #if DEBUG == 1
-  Serial.print("\x1b[?25l");  // Hide cursor.
+  Serial.print("\x1b[?25l");                     // Hide cursor.
   Serial.print("\x1b[48;5;111m\x1b[38;5;202m");  // Terminal colours.
 #endif
   memset(displayBuffer, 32, DISPLAY_CHARS);  // Clear display.
@@ -115,7 +135,6 @@ void loop() {
   static uint8_t  state        = 0;
   static uint8_t  statePrev    = 0xff;
   static int32_t  deltaTimeVar = 0;
-  bool            gateChange;
   bool            armChange;
   bool            stopChange;
   bool            resetChange;
@@ -130,12 +149,10 @@ void loop() {
   static bool     keepFrame            = 0;
 
 
-
-  checkPin(PIN_GATE, &gateVal, &gateChange);
+  //checkPin(PIN_GATE, &gateVal, &gateChange);
   checkPin(PIN_BTN_ARM, &armVal, &armChange);
   checkPin(PIN_BTN_STOP, &stopVal, &stopChange);
   checkPin(PIN_BTN_RESET, &resetVal, &resetChange);
-
 
 
   switch(state) {
@@ -227,8 +244,7 @@ void loop() {
       STATE_ON_EXIT(state, statePrev, keepFrame = 0; displayBufferChanged = 1;)
       break;
 
-    default:
-      state = 0;
+    default: state = 0;
 #if DEBUG == 1
       Serial.println("STATE ERR");
 #endif
@@ -236,9 +252,7 @@ void loop() {
   }
 #if DEBUG == 1 || DEBUG_MSPF == 1
   if(tempTick1 >= 32) {
-    for(uint8_t idx = 0; idx < 2; idx++) {
-      displayBuffer[idx + 28] = ((deltaTimeVar / (uint16_t)pow(10, 1 - idx)) % 10) + '0';
-    }
+    for(uint8_t idx = 0; idx < 2; idx++) { displayBuffer[idx + 28] = ((deltaTimeVar / (uint16_t)pow(10, 1 - idx)) % 10) + '0'; }
     displayBuffer[30]    = 'm';
     displayBuffer[31]    = 's';
     displayBufferChanged = 1;
@@ -295,7 +309,9 @@ void loop() {
   if(MS_PER_LOOP - deltaTimeVar > 0) {
     delay(MS_PER_LOOP - deltaTimeVar);
   } else {
+#if DEBUG == 1
     Serial.print("\tdTime too long");
+#endif
   }
   deltaTime();
 
