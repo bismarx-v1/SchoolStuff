@@ -5,6 +5,7 @@
 
 void setup() {
   Serial.begin(115200);
+  line_sensor_setup();
 }
 
 void loop() {
