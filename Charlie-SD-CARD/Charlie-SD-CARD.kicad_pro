@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.3
         }
       },
       "diff_pair_dimensions": [
@@ -58,7 +58,48 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "clearance|83506875|131198105|b7c95c95-2b1a-4fc6-b25d-05f895898055|93fdbef6-0d22-46a8-a095-260ed8b07a2e",
+          ""
+        ],
+        [
+          "clearance|85552181|133308819|f970c16c-226f-4d96-b6b7-56fcbd5a513b|2a7990ed-40ab-4b39-9d5c-83afaef80c3f",
+          ""
+        ],
+        [
+          "clearance|87937783|126691182|fb6c8dd7-1f66-4968-b715-448d78230085|04b72c1c-3ba2-4410-9cb1-969a6cee24e3",
+          ""
+        ],
+        [
+          "clearance|90018445|128930059|ded81e28-a3f9-4c8c-b202-cd279fe57a96|a40f993a-989c-45eb-a02e-63049ecea004",
+          ""
+        ],
+        [
+          "copper_edge_clearance|65900001|125825000|0c2a9027-0b99-4e20-87af-754dd783ee26|81426213-ff4e-492f-bb01-2d1eb9cea320",
+          ""
+        ],
+        [
+          "copper_edge_clearance|65900001|125825000|5b1a74cb-c066-43b9-b468-25abb5fde850|81426213-ff4e-492f-bb01-2d1eb9cea320",
+          ""
+        ],
+        [
+          "copper_edge_clearance|65900001|128325000|0c2a9027-0b99-4e20-87af-754dd783ee26|64848c0e-dfa8-483b-9cf3-151fe9b1e9c8",
+          ""
+        ],
+        [
+          "copper_edge_clearance|65900001|128325000|5b1a74cb-c066-43b9-b468-25abb5fde850|64848c0e-dfa8-483b-9cf3-151fe9b1e9c8",
+          ""
+        ],
+        [
+          "copper_edge_clearance|66450001|135125000|5b1a74cb-c066-43b9-b468-25abb5fde850|4a70beee-515c-4bd1-9c39-d40fcd977c28",
+          ""
+        ],
+        [
+          "copper_edge_clearance|66450001|135125000|974f5e8c-4ed4-4cb3-b835-ff012548f7d7|4a70beee-515c-4bd1-9c39-d40fcd977c28",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -133,8 +174,8 @@
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 1,
         "min_silk_clearance": 0.15,
-        "min_text_height": 0.7,
-        "min_text_thickness": 0.153,
+        "min_text_height": 0.8,
+        "min_text_thickness": 1.0,
         "min_through_hole_diameter": 0.1,
         "min_track_width": 0.09,
         "min_via_annular_width": 0.13,
@@ -464,14 +505,14 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
       "simulation_model_issue": "ignore",
-      "single_global_label": "ignore",
+      "single_global_label": "error",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
       "unit_value_mismatch": "error",
