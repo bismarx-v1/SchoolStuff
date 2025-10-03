@@ -2144,23 +2144,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "SD"
-				(at 0 0 0)
+			(property "Reference" "SD1"
+				(at 2.54 21.59 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" ""
-				(at 0 0 0)
+			(property "Value" "~"
+				(at 2.54 20.32 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "footprints:sdCard"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2204,14 +2204,14 @@
 				(pin input line
 					(at 11.43 10.16 180)
 					(length 2.54)
-					(name "0"
+					(name "9"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "0"
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5578,7 +5578,7 @@
 				)
 			)
 		)
-		(property "Footprint" "footprints:sdCard"
+		(property "Footprint" "sumec_brd:sd_card_contacts"
 			(at 44.45 96.52 0)
 			(effects
 				(font
@@ -5617,7 +5617,7 @@
 		(pin "5"
 			(uuid "a944ab32-9ba8-4b79-be54-3ca72faa9228")
 		)
-		(pin "0"
+		(pin "9"
 			(uuid "96a09ea8-47e1-4b44-b794-16cc0eabddf0")
 		)
 		(pin "1"

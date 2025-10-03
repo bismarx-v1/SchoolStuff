@@ -521,7 +521,9 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "sumec_brd"
+    ],
     "pinned_symbol_libs": []
   },
   "meta": {
