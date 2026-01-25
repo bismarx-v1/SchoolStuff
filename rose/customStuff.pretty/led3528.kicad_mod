@@ -1,0 +1,107 @@
+(footprint "led3528"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "LED3528"
+		(at 0 4.75 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "21e90942-7b03-4869-b615-87a02a40d0e1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "colour"
+		(at 0 6.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "5623779d-0750-4e6c-aedd-d812686bb2a0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8f5526f8-f857-4d64-9a1c-d12dad16c879")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c7a01dd0-9116-4e8b-a732-e23c8055e3e4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_poly
+		(pts
+			(xy -0.6 -1.65) (xy -1.1 -1.65) (xy -1.1 -1.15)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "cf536d32-ef16-4848-943c-db86fa90054a")
+	)
+	(fp_rect
+		(start -1.15 -1.7)
+		(end 4.15 1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "c2e8fb30-d39b-4e37-a1cd-16b402e1ba29")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 7.75 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "22aec8fb-f73e-496c-9416-8747a7327311")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 0)
+		(size 1.5 2.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "7d6a8b5f-d717-4732-99ff-695274e5e8ef")
+	)
+	(pad "2" smd rect
+		(at 3 0)
+		(size 1.5 2.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "296cf025-77cf-46f4-843c-24db1952b51c")
+	)
+	(embedded_fonts no)
+)

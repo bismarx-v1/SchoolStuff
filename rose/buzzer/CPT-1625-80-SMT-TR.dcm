@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CPT-1625-80-SMT-TR
+D 16.8 mm, 5 Vp-p, 80 dB, Surface Mount (SMT), Piezo Audio Transducer Buzzer
+K
+F https://www.sameskydevices.com/product/resource/cpt-1625-80-smt-tr.pdf
+$ENDCMP
+#
+#End Doc Library

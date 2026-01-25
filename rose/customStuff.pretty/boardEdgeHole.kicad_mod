@@ -1,0 +1,78 @@
+(footprint "boardEdgeHole"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Mounting Hole 2.2mm, no annular, M2")
+	(tags "mounting hole 2.2mm no annular m2")
+	(property "Reference" "REF**"
+		(at 0 -3.2 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d2a67b90-89bb-4568-8629-807d4326a860")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "boardEdgeHole"
+		(at 0 3.2 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b0733521-286a-4495-b077-b68b50f8d0bb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3397b4b5-4c1b-4849-a88d-78be4833357c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "10b73f10-4bb1-461c-a1d8-3c71004342c1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(fp_circle
+		(center 0 0)
+		(end 0.35 -0.000001)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "7ca002d2-756d-4e94-94f7-f4e9c4a5c1f9")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 0.7 0.7)
+		(drill 0.7)
+		(layers "*.Mask")
+		(uuid "6a02ad21-1541-4dc7-8d52-3d6eaee0382c")
+	)
+	(embedded_fonts no)
+)

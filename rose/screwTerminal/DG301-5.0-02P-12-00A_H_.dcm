@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DG301-5.0-02P-12-00A_H_
+D PCB terminal block; angled 90; 5mm; ways: 2; on PCBs; 1.5mm2; blue
+K
+F https://www.tme.com/Document/72ad9f371bb0c16572574ac47903b3a1/DG301-5.0.pdf
+$ENDCMP
+#
+#End Doc Library

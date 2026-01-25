@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP KVR-5R0H105-R
+D Eaton Corporation Eaton Supercapacitor, KVR Coin Cell, 5.0V,1F,30ohm,vert
+K
+F https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-kvr-supercapacitors-coin-cells-data-sheet-elx1175-en.pdf
+$ENDCMP
+#
+#End Doc Library
