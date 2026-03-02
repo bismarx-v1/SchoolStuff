@@ -27245,6 +27245,81 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:BC337")
+		(at 92.71 196.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e5bbfedb-f398-434e-a219-681a36a0df98")
+		(property "Reference" "Q5"
+			(at 91.44 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "bc337"
+			(at 93.98 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_HandSolder"
+			(at 94.615 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf"
+			(at 92.71 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, TO-92"
+			(at 92.71 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "7bf481a8-6908-482b-a504-1c2611dede51")
+		)
+		(pin "1"
+			(uuid "66ca4aff-a890-4b32-9815-4e2df09cf3f9")
+		)
+		(pin "2"
+			(uuid "1ca3902c-7da5-400b-a110-369d424c10bc")
+		)
+		(instances
+			(project "controlledWallSocket-rounded-nyoHoles"
+				(path "/5bec4bd2-4d25-4622-9a8f-0e623f732ee6"
+					(reference "Q5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 52.07 248.92 0)
 		(unit 1)
