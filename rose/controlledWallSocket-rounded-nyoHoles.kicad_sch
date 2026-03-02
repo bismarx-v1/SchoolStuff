@@ -17404,7 +17404,7 @@
 		(dnp no)
 		(uuid "3a2808b1-6f98-4bb0-a813-2ad63038ede5")
 		(property "Reference" "Q4"
-			(at 229.87 119.38 90)
+			(at 229.235 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17412,7 +17412,7 @@
 			)
 		)
 		(property "Value" "bc337"
-			(at 233.68 119.38 90)
+			(at 234.315 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
