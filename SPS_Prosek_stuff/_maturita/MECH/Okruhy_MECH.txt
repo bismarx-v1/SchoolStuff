@@ -1,0 +1,23 @@
+Mechatronika (pro zaměření Mechatronika):
+/1) Mechatronika, Mechatronický návrh, systém a výrobek
+/2) Logické řízení – programovací jazyky, logické funkce
+/3) Kombinační logické řízení, minimalizace
+/4) Sekvenční logické řízení, klopné obvody
+/5) Diskrétní řízení – použití, signály, diskretizace signálu, PSD regulátor
+/6) Spojité řízení a regulace – PID regulátor
+/7) Soustavy, statické, dynamické a frekvenční charakteristiky
+/8) Základy programování PLC a mikrokontrólerů
+/9) Programování v jazyce C
+/10) Průmyslové komunikace – komunikační sběrnice, SCADA systémy
+?11) Senzorika – poloha, rychlost, zrychlení, průtok, hladina
+?12) Senzorika – teplota, síla, hmotnost, deformace, napětí, tlak
+   13) Akční členy – elektrické, pneumatické a hydraulické mechanismy
+/14) Průmyslové roboty a manipulátory
+/15) Automatizované výrobní a nevýrobní systémy
+?16) Umělá inteligence
+?17) Nové materiály a technologie v mechatronice
+/18) Metody technické diagnostiky
+?19) Převody točivého pohybu (ozubené, řetězové, řemenové)
+?20) Mechanismy obecného pohybu a tvrdá automatizace
+   21) Číslicově řízené stroje (CNC) a jejich programování
+?22) CAx systémy a Rapid prototyping

@@ -1,0 +1,3 @@
+trojclenka x/y = 1023/5 
+napeti = dilky / 1023 * 5V(3V3)
+ 

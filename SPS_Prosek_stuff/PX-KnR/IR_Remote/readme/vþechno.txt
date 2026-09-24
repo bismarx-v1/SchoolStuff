@@ -1,0 +1,3 @@
+Jeden soubor projektu IR ovládání z KiCadu, abychom je mohli otevřít. Hlavní strana s odkazem na další strany. 
+Složku s exportem pro výrobu
+Dokumentaci v pdf celého projektu.

@@ -1,0 +1,21 @@
+Elektrotechnika a elektronika (pro obě zaměření):
+1) Stejnosměrný proud, základy elektrochemie
+2) Elektrostatické pole
+3) Magnetické pole a elektromagnetická indukce
+4) Střídavý proud a kompenzace jalového výkonu
+5) Elektrické přístroje
+6) Transformátory
+7) Točivé elektrické stroje
+8) Výroba elektrické energie
+9) Energetická rozvodná soustava a kvalita elektrické energie
+10) Elektroinstalace a ochrana před bleskem
+11) Pasivní elektronické součástky
+12) Polovodičové součástky
+13) Integrované obvody a desky plošných spojů
+14) Napájecí zdroje, akumulátory a záložní zdroje
+15) Operační zesilovače
+16) AD a DA převodníky
+17) Optoelektronika
+18) Modulace a demodulace, oscilátory
+19) Elektrotechnická měření
+20) Užití elektrické energie a bezpečnost elektrických zařízení
